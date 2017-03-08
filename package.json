@@ -1,0 +1,31 @@
+{
+  "name": "ivr-phone-tree-in-twilio",
+  "version": "1.0.0",
+  "description": "A Node.js app that has an IVR phone tree using Twilio",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/albertogodinez/IVR_PhoneTree.git"
+  },  
+  "keywords": [
+    "node",
+    "ivr",
+    "twilio",
+    "express",
+    "twiml",
+    "webhooks"
+  ],
+  "author": "Alberto Godinez",
+  "license": "ISC",
+  "homepage": "https://github.com/albertogodinez/IVR_PhoneTree#readme",
+  "dependencies": {
+    "body-parser": "^1.17.1",
+    "cookie-parser": "^1.4.3",
+    "express": "^4.15.2",
+    "morgan": "^1.8.1",
+    "twilio": "^2.11.1"
+  }
+}
