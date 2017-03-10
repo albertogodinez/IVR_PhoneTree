@@ -90,5 +90,5 @@ function onListening() {
   debug('Listening on ' + bind);
 }
 
-mongoose.connect('mongodb://localhost/ivr-information');
+mongoose.connect(process.env.MONGOLAB_URI);
 mongoose.Promise = require('bluebird');
