@@ -40,17 +40,17 @@ router.post('/menu', twilio.webhook({validate: false}), function (request, respo
 
 
 var transferToUserOne = function (twiml) {
-    twiml.say("Transfering to user one.",
+    twiml.say("Transferring to user one.",
         {voice: "alice", language: "en-GB"});
 
-    var tempNum = "+5122965489";
+    var tempNum = "+12024173371";
     twiml.dial(tempNum);
 
     return twiml;
 };
 
 var speakToOperator = function (twiml) {
-    twiml.say("Transfering to operator.",
+    twiml.say("Transferring to operator.",
         {voice: "alice", language: "en-GB"});
 
     var tempNum = "+12024173378";
