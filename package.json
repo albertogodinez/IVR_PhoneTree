@@ -2,7 +2,7 @@
   "name": "ivr-phone-tree-node",
   "version": "1.0.0",
   "scripts": {
-    "start": "node index.js",
+    "start": "node ./bin/www",
     "test": "export NODE_ENV=test && mocha test"
   },
   "description": "Create an IVR phone tree with Node.js, Express and Twilio.",
@@ -22,17 +22,24 @@
     "twiml",
     "webhooks"
   ],
-  "engines" : { "node" : ">=4.1.0 <5.5.0" },
+  "engines": {
+    "node": ">=0.12.2"
+  },
   "dependencies": {
-    "body-parser": "~1.8.1",
-    "cookie-parser": "~1.3.3",
-    "debug": "~2.0.0",
-    "express": "~4.9.0",
-    "jade": "~1.6.0",
-    "morgan": "~1.3.0",
-    "serve-favicon": "~2.1.3",
-    "stylus": "0.42.3",
-    "twilio": "^2.5.2"
+    "bluebird": "^3.1.1",
+    "body-parser": "~1.13.2",
+    "connect-flash": "^0.1.1",
+    "cookie-parser": "~1.3.5",
+    "debug": "~2.2.0",
+    "express": "~4.13.1",
+    "express-session": "^1.12.1",
+    "jade": "~1.11.0",
+    "kerberos": "~0.0.17",
+    "mongoose": "^4.3.1",
+    "mongoose-deep-populate": "^2.0.3",
+    "morgan": "~1.6.1",
+    "serve-favicon": "~2.3.0",
+    "twilio": "^2.8.0"
   },
   "devDependencies": {
     "chai": "^3.4.1",
@@ -40,8 +47,5 @@
     "mocha": "^2.3.4",
     "server-destroy": "^1.0.1",
     "supertest": "^1.1.0"
-  },
-  "engines": {
-    "node": ">=0.12.2"
   }
 }
